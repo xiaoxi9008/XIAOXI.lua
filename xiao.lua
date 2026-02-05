@@ -245,6 +245,16 @@ Button(Tabb, "重进服务器", function()
         )
 end)
 
+ConfigElementsTab:绑定键({
+        Flag = "KeybindTest",
+        Title = "Keybind",
+        Desc = "Keybind to open ui",
+        Value = "G",
+        Callback = function(v)
+            Window:SetToggleKey(Enum.KeyCode[v])
+        end
+    })
+
 Tabd:Paragraph({
     Title = "小西不更新怎么办？",
     Desc = [[那就抄④]],
